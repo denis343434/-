@@ -1169,3 +1169,20 @@ thead td{
 		padding-left: 2%;
 	}
 }
+@media screen and (max-width:365px){
+	.blok input{
+		width: 90%;
+	}
+	.programs{
+		padding-left: 0px;
+		padding-left: 3%;
+	}
+	.batton-table button{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:557px){
+	.card{
+		width: 90%;
+	}
+}
