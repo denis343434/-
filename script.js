@@ -1,0 +1,25 @@
+
+$('#modl').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
+$('.text-battun').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
+$('.btn-programs').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
+$('.batton-table').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
+$('.pay-button').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
+$('.ham-menu-taitle').click(function(){
+	$('.ham-menu-1').toggleClass('d-n');
+});
+$('#menu-1').click(function(){
+	$('.ham-menu-1').toggleClass('d-n');
+});
+$('#menu').click(function(){
+	$('.hamburger').toggleClass('d-n');
+});
