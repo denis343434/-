@@ -54,6 +54,7 @@ table {
 body{
 	margin: 0;
 	font-family: 	"Roboto";
+	width: 100%;
 }
 .d-b{
 	display: block;
@@ -87,6 +88,50 @@ body{
 	padding-bottom: 20px;
 	padding-left: 190px;
 	border-radius: 7px;
+}
+.cl-btn-8 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+.cl-btn-8:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl-btn-8:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl-btn-8:hover:after {
+    transform: scale(1);
+}
+.cl-btn-8:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
 }
 .cl-btn-7 {
     width: 40px;
@@ -290,58 +335,87 @@ label {
 	justify-content: center;
 	display: flex;
 	align-items: center;
-	background-color: #40AB91;
-	padding-top: 65px;
+	padding-top: 100px;
 	padding-bottom: 130px;
-}
-.info-logo h1{
-	font-size: 89px;
-	color: #FFBA6E;
-}
-.info-logo a{
-	color: #fff;
-	padding-left: 10px;
 }
 .info-text{
 	font-size: 25px;
-	padding-left: 147px;
+	padding-left: 90px;
+}
+.img-color{
+	background-color: #40AB91;
+	padding-left: 140px;
+	padding-top: 140px;
+	margin-top: 3%;
+	height: 46%;
+	left: 270px;
+	top: 650px;
+	position: absolute;
+	z-index: 0;
+	width: 17%;
+}
+.info-logo img{
+	width: 450px;
+	height: 40%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 90px;
+	position: relative;
 }
 .info-text h1{
-	color: #fff;
+	color: #000;
+	font-weight: 400;
+	font-size: 33px;
+	line-height: 50px;
 }
 .info-text a{
-	color: #FFBA6E;
+	color: #000;
 }
 .info-text h2{
 	font-size: 20px;
 	line-height: 26px;
-	color: #fff;
+	color: #000;
 	font-weight: 400;
+	line-height: 30px;
 }
 .text-battun button{
 	text-decoration: none;
 	color: #fff;
 	font-size: 19px;
-	background-color: #FFBA6E;
+	background-color: #40AB91;
 	padding: 20px 20px;
-	border-radius: 90px;
+	border-radius: 10px;
 	border: 0;
 }
 .text-battun{
 	margin-top: 40px;
 }
-
+.input-text--title{
+	color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 30px;
+	margin: 0;
+}
+.input-text--title p{
+	font-weight: 400;
+	font-size: 30px;
+	margin: 0;
+}
+.input-text1 p{
+	margin: 0;
+}
 .logo1{
 	font-family: "Roboto";
-	font-size: 20px;
+	font-size: 18px;
 	padding-left: 290px;
 	padding-top: 150px;
 }
+.logo1 h1{
+	font-weight: 400;
+	line-height: 53px;
+}
 .input-text{
 	align-items: center;
-}
-.input-text1{
-	padding-left: 56px;
 }
 .input-text input{
 	border-radius: 10px;
@@ -352,27 +426,28 @@ label {
 	font-family: "Roboto";
 	width: 330px;
 }
+.blok2 p{
+	margin: 0;
+}
 .input-text-title{
-	display: flex;
-	padding-top: 15px;
+	display: block;
+	padding-top: 5px;
 }
 .input-text-title input{
-	width: 300px;
-	padding: 10px;
+	width: 210px;
+	padding-bottom: 13px;
+	padding-left: 20px;
 	border-radius: 10px;
+	padding-right: 20px;
 	border-width: 1px;
-	font-size: 20px;
+	font-size: 14px;
+	border: 0px;
+	background-color: #ECF1F7;
 }
 .input-text-title input{
 	font-family: "Roboto";
 	padding-top: 15px;
 	color: #606060;
-}
-.input-text-title p{
-	padding-bottom: 0px;
-	margin-bottom: 0;
-	font-family: "Roboto";
-	font-size: 15px;
 }
 .input-text p{
 	padding-bottom: 0;
@@ -383,8 +458,9 @@ label {
 }
 .input-text1{
 	font-family: "Roboto";
-	font-size: 20px;
-	padding-left: 105px;
+	font-size: 14px;
+	padding-left: 30px;
+	padding-top: 5px;
 }
 
 .input-text{
@@ -399,29 +475,88 @@ label {
 	display: flex;
 }
 .calculator{
-	display: flex;
+	display: block;
 	align-items: center;
 	background-color: #fff;
-	width: 1500px;
+	width: 80%;
 	padding-left: 90px;
 	margin-left: 150px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-top-right-radius: 160px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	z-index: 0;
+	position: relative;
+	border-top: 5px solid #000;
+	border-color: #FFBA6E;
+}
+.chart{
+	font-size: 20px;
+	font-weight: 300;
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	padding: 20px 20px 70px 20px;
+	border-radius: 29px;
+	margin-top: 10px;
+	justify-content: center;
+	overflow-x: scroll;
+	height: 100%;
+	width: 80%;
+	margin-left: 10% ;
+}
+.lene{
+	height: 3px;
+    width: 20px;
+    background-color: #FA6900;
+    border-radius: 5px;
+    transform: rotate(-40deg);
+}
+.lene2{
+	height: 3px;
+    width: 20px;
+    background-color: #FA6900;
+    border-radius: 5px;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 0px;
+    margin-right: 2px;
+}
+.chart-container{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	z-index: 9;
+	background-color: rgba(0,0,0,0.4);
+}
+.chart table{
+	height: 90%;
+	width: 100%;
+}
+.close-chat-table{
+	position: absolute;
+	left: 90%;
+	top: 2%;
+	z-index: 10;
+}
+.chart td{
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
 }
 .button-title a{
 	text-decoration: none;
-	color: #606060;
-	background-color: #edf3f5;
+	color: #fff;
 	padding: 13px;
 	border-radius: 10px;
 	margin-left: 36px;
 	font-family: "Roboto";
-	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.5);
+	background-color: #40AB91;
+	font-weight: 700;
 }
 .answer-title{
 	font-family: "Roboto";
@@ -441,7 +576,8 @@ label {
 }
 .button-title1 a{
 	text-decoration: none;
-	color: #606060;
+	color: #fff;
+	font-weight: 700;
 	background-color: #edf3f5;
 	padding: 13px;
 	border-radius: 10px;
@@ -449,19 +585,26 @@ label {
 	padding-left: 28px;
 	padding-right: 28px;
 	font-family: "Roboto";
-	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.5);
+	background-color: #40AB91;
 }
 .button-title2 a{
 	text-decoration: none;
-	color: #606060;
+	color: #fff;
 	background-color: #edf3f5;
 	padding: 13px;
+	font-weight: 700;
 	border-radius: 10px;
 	margin-left: 28px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family: "Roboto";
-	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.5);
+	background-color: #40AB91;
+}
+.container{
+	display: flex;
+}
+.container1{
+	display: flex;
 }
 .button-title2{
 	margin-top: 65px;
@@ -472,26 +615,33 @@ label {
 	padding: 13px;
 	border-radius: 10px;
 	font-family: "Roboto";
-	font-size: 17px;
-	width: 350px;
-	margin-top: 15px;
+	font-size: 14px;
+	width: 230px;
+	margin-top: 5px;
+	border: 0px;
+	background-color: #ECF1F7;
+}
+.input{
+	display: flex;
 }
 .blok{
 	margin-top: 20px;
 }
+.blok input{
+	border: 0px;
+	background-color: #ECF1F7;
+}
 .subscraid{
 	margin-left: 51px;
 	font-family:"Roboto";
-	background-color: #40AB91;
 	padding: 31px 43px 31px 43px;
 	border-radius: 40px;
 	margin-bottom: 35px;
 	margin-top: 30px;
-	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .subscraid p{
-	color: #ffff;
-	font-size: 22px;
+    color: rgba(0, 0, 0, 0.54);;
+	font-size: 12px;
 	font-weight: 400;
 }
 .subscraid h1{
@@ -499,34 +649,56 @@ label {
 	font-size: 2.2rem;
 }
 .pay-button{
-	background-color: #fff;
-	padding-left: 55px;
+	background-color: #fff;;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	border-radius: 90px;
 	width: 200px;
-	margin-left: 50px;
 	border:0;
 }
+.pay-button-1{
+
+}
+.pay-button-1 button{
+	border: 0px;
+	background-color: #FFBA6E;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 20px;
+	border-radius: 10px;
+}
 .pay-button button{
-	color: #000;
+	color: #fff;
 	font-size: 16px;
 	text-decoration: none;
 	font-weight: 500;
 	border:0;
-	background-color: #fff;
+	background-color: #40AB91;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 40px;
 }
 .info-title{
-	padding-left: 290px;
-	padding-top: 47px;
+	padding-left: 0px;
+	padding-top: 0px;
 	font-family: "Roboto";
 	color: #909090;
-	font-size: 18px;
+	font-size: 12px;
 	line-height: 1.5;
 	font-weight: 600;
 }
 .info-title a{
 	color: #202020;
+}
+
+.fon-calor-3{
+	position: absolute;
+	left: 70%;
+	top: 1605px;
+	background-color: #40AB91;
+	width: 30%;
+	height: 80%;
 }
 .programs{
 	font-family: "Roboto";
@@ -705,7 +877,7 @@ label {
 	margin-top: 5px;
 }
 td{
-	border: 1px solid #000;
+	border: 2px solid #909090;
 }
 thead{
 	background-color: #edebeb;
@@ -733,8 +905,8 @@ thead td{
 	font-size: 20px;
 }
 .ham-menu-1{
-	position: absolute;
-	padding-left: 60px;
+	position: fixed;
+	padding-left: 10px;
 	padding-top: 20px;
 	width: 70%;
 	height: 55%;
@@ -754,15 +926,18 @@ thead td{
 }
 .button-2{
 	display: grid;
-	width: 40%;
+	width: 20%;
 }
 .button-2 button{
 	margin-top: 45px;
 	border: 0px;
-	background-color: #FFBA6E;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-radius: 20px;
+	background-color: #fff;
+	padding-left: 0;
+	margin-top: 00px;
+	width: 100px;	
 }
 .phone{
 	margin-top: 40px;
@@ -855,334 +1030,399 @@ thead td{
 .text1 a{
 	font-weight: 700;
 }
-@media screen and (max-width:1669px){
-	.calculator{	
-		margin: 40px;	
-	}
-}
-@media screen and (max-width:1648px){
-	.calculator{	
-		margin: 10px;	
-	}
-}
-@media screen and (max-width:1617px){
-	.calculator{	
-		margin: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		width: 1450px;
-		margin-left: 30px;
-	}
-}
-@media screen and (max-width:1499px){
-	.calculator{	
-	margin-left: 90px;
-	display: block;
-	width: 1000px;
+@media screen and (max-width:1549px){
+	.button-title , .button-title1 , .button-title2 {
+		margin-left: 0;
 	}
 	.subscraid{
-		width: 400px;
-		margin-left: 200px;
+		margin-left: 0;
+	}
+	.fon-calor-3{
+		z-index: -1;
+	}
+	.img-color{
+		z-index: -1;
+	}
+}
+@media screen and (max-width:1439px){
+	.button-title a , .button-title1 a , .button-title2 a {
+		margin-left: 10px;
 	}
 }
 @media screen and (max-width:1359px){
-	.info-title{
-		padding-left: 90px;
-	}
-}
-@media screen and (max-width:1327px){
-	.logo-btn{
-		padding-left: 90px;
-	}
-	.credit-card{
-		padding-left: 50px;
-	}
-}
-@media screen and (max-width:1196px){
-	.button{
-		margin-left: 90px;
-	}
-	.info-logo{
-		display: none;
-	}
-	.info-text{
-		display: block;
-		margin-left: 0;
-		padding-left: 10px;
-	}
-}
-@media screen and (max-width:1157px){
 	.calculator{
-		padding-left: 10px;
-		margin-left: 10px;
+		margin-left: 5px;
 	}
-	.info-title{
-		padding-left: 10px;
-	}
-	.fon{
+	.input-text{
 		display: block;
-		padding-left: 270px;
-	}
-}
-@media screen and (max-width:1120px){
-	.table{
-		width: 100%;
-		justify-content: flex-end;
 		padding-bottom: 20px;
 	}
-	.table-calloms{
-		overflow-x: scroll;
-		width: 600px;
-		margin-left: 10px;
+	.button-title , .button-title1 , .button-title2{
+		margin-top: 20px;
 	}
-	.calloms1 p{
-
-	}
-	.calculator{
-		padding-left: 10px;
-		margin-left: 10px;
-		padding-right: 10px;
-		margin: 0;
-		width: 910px;
-	}
-	.container{
-		width: 95%;
-		padding-left: 30px;
+	.button-title a , .button-title1 a , .button-title2 a{
 		margin-left: 0;
-		overflow-x: auto;
 	}
-	table{
-		overflow-x: scroll;
-		width: 1200px;
+}
+@media screen and (max-width:1269px){
+	.logo-btn{
+		padding-left: 20px;
+	}
+	.credit-card{
+		padding-left: 30px;
+	}
+}
+@media screen and (max-width:1053px){
+	.fon-calor-3{
+		display: none;
+	}
+	.logo1{
+		padding-left: 30px;
 	}
 	.bolls{
 		display: none;
 	}
-	.text1{
-		padding-left: 10px;
-	}
-}
-@media screen and (max-width:965px){
-	.button{
-		margin-left: 20px;
-	}
-	.fon{
-		padding-left: 30px;
-	}
-	.batton-table{
-		margin-left: 100px;
-	}
-	.text-prog{
-		padding-left: 100px;
-	}
-	.logo1{
-		padding-left: 100px;
-	}
-}
-@media screen and (max-width:947px){
 	.programs-title{
 		display: block;
 	}
 	.programs{
 		justify-content: flex-start;
-		padding-left: 90px;
+		margin-left: 30px;
 	}
 	.programs-calums{
-		margin-top: 30px;
-	}
-	.ham-menu-taitle{
-		display: block;
-		padding-bottom: 90px;
-	}
-	.logo-info{
-		display: none;
-	}
-	.logo-btn{
-		display: none;
-	}
-	.fon{
-		padding-top: 4px;
-		padding-left: 10px;
-	}
-	.input-text{
-		display: block;
-	}
-	.blok{
-		margin-top: 40px;
-	}
-	.button-title2 , .button-title1 , .button-title{
-		margin-left: 0px;
-		margin-top: 30px;
-	}
-	.input-text-title{
-		display: block;
-	}
-	.input-text1{
-		padding-left: 0;
-		padding-top: 20px;
-	}
-	.subscraid{
-		margin-left: 0;
-	}
-	.calculator{
-		width: 540px;
-	}
-}
-@media screen and (max-width:539px){
-	.card{
-		width: 90%;
-	}
-	.calculator{
-		padding-right: 0;
-		width: 100%;
-	}
-}
-@media screen and (max-width:521px){
-	.subscraid{
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.info-text h1{
-		font-size: 20px;
-	}
-	.calculator{
-		width: 100%;
-	}
-	.programs{
-		padding-left: 10px;
-	}
-	.text1 p{
-		font-size: 19px;
-	}
-	.batton-table{
-		margin-left: 10px;
-	}
-}
-
-@media screen and (max-width:414px){
-	.cl-btn-7{
-		left: 85%;
-	}
-	.ham-menu{
-		display: block;
-	}
-	.ham-menu-1{
-		width: 75%;
-		height: 60%;
-	}
-	.button-2{
-		width: 70%;
-	}
-	.hamburger{
-		padding: 10px;
-		width: 90%;
-		padding: 0;
-		padding-left: 9px;
-	}
-	.text-inp{
-		font-size: 22px;
-	}
-	.inp input{
-		width: 60%;
-	}
-	.citi{
-		width: 90%;
-	}
-	.batton-hamb{
-		width: 40%;
-		padding-left: 5%;
-		margin-left: 20%;
-	}
-	.worning{
-		width: 50%;
-		padding-left: 20%;
-	}
-	.card{
-		width: 94%;
-		margin-left: 0;
-	}
-	.info-text h1{
-		font-size: 18px;
-	}
-	.logo1{
-		padding-left: 20px;
-	}
-	.button-title a , .button-title1 a , .button-title2 a{
 		margin-top: 20px;
-		padding-left: 35%;
-	}
-	.button-title , .button-title1 , .button-title2{
-		display: grid;
-		width: 56%;
-	}
-	#cocktail {
-		width: 60%;
-	}
-	#start{
-		width: 55%;
-	}
-	.answer1 p , a{
-		font-size: 15px;
-	}
-	.pay-button{
-		margin-left: 0;
-	}
-	.subscraid{
-		width: 75%;
-		padding-left: 20px;
-		margin-left: 20px;
-	}
-	.calculator{
-		width: 95%;
-	}
-	.programs{
-		padding-left: 10%;
-	}
-	.container{
-		padding-left: 5px;
-	}
-	.text1 p{
-		font-size: 12px;
-	}
-	.text1{
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-	.batton-table{
-		margin-left: 10px;
-	}
-	.logo-text h2{
-		font-size: 15px;
-	}
-}
-@media screen and (max-width:360px){
-	.ham-menu-1{
-		height: 70%;
-	}
-	.calculator{
-		border-top-right-radius: 20px;
 	}
 	.text-prog{
 		padding-left: 20px;
 	}
-	.programs{
-		padding-left: 2%;
+	.img-color{
+		left: 150px;
+		display: none;
+	}
+	.info-text h2{
+		font-size: 12px;
+	}
+	.info-text h1{
+		font-size: 17px;
+		line-height: 25px;
+	}
+	.calculator{
+		padding-left: 10px;
+	}
+	.fon{
+		display: block;
+		padding-left: 10px;
+		padding-top: 20px;
+	}
+	.ham-menu{
+		display: block;
+		padding-bottom: 30px;
+	}
+	.logo-btn{
+		display: none;
+	}
+	.logo-text{
+		padding-left: 30px;
+	}
+	.card{
+		margin-left: 120px;
+	}
+	.subscraid{
+		padding-left: 0;
+	}
+	.text1 p{
+		font-size: 18px;
+	}
+	.batton-table{
+		margin-left: 50px;
+	}
+	.text1{
+		padding-left: 10%;
+	}
+	.container{
+		width: 100%;
+		padding-left: 10px;
+		overflow-x: scroll;
+	}
+	.container table{
+		overflow-x: scroll;
+		width: 1000px;
+	}
+	.container td{
+		padding-right: 60px;
+	}
+	.bank p{
+		width: 200px;
+	}
+	.user{
+		position: relative;
 	}
 }
-@media screen and (max-width:365px){
-	.blok input{
+@media screen and (max-width:375px){
+	.card{
+		margin-left: 10px;
 		width: 90%;
 	}
-	.programs{
-		padding-left: 0px;
-		padding-left: 3%;
+	.logo1{
+		padding-top: 40px;
 	}
-	.batton-table button{
+	.cl-btn-7{
+		left: 280px;
+	}
+	.logo-text h1{
+		font-size: 32px;
+	}
+	.logo-text h2{
+		font-weight: 400;
 		font-size: 13px;
 	}
-}
-@media screen and (max-width:557px){
-	.card{
+	.info{
+		display: block;
+	}
+	.info-logo img{
+		width: 250px;
+	}
+	.ham-menu-1{
+		padding: 10px;
 		width: 90%;
+		height: 80%;
+	}
+	.button-2 button{
+		width: 300px;
+	}
+	.hamburger{
+		padding: 10px;
+		width: 99%;
+	}
+	.worning{
+		width: 40%;
+		padding-left: 40px;
+	}
+	.text-inp {
+		font-size: 28px;
+	}
+	.inp input {
+		width: 300px;
+	}
+	.batton-hamb button{
+
+		padding-left: 20px;
+	}
+	.batton-hamb{
+		padding-left: 20px;
+		width: 200px;
+		margin-left: 80px;
+	}
+	.info-text{
+		padding-left: 10px;
+	}
+	.text-battun{
+		margin-left: 60px;
+	}
+	.citi{
+		width: 280px;
+	}
+	.Vector4{
+		top: 80px;
+		width: 200px;
+	}
+	.img-color{
+		display: block;
+		left: 20px;
+		height: 150px;
+		top: 600px;
+	}
+	.info-logo{
+		padding-left: 100px;
+		padding-top: 30px;
+	}
+	.info-text h1{
+		text-align: center;
+		font-size: 25px;
+	}
+	.info-text h2{
+		text-align: center;
+		line-height: 15px;
+		font-size: 20px;
+	}
+	.calculator{
+		width: 99%;
+	}
+	.container1{
+		display: block;
+	}
+	.button-title , .button-title1 , .button-title2{
+		display: grid;
+		padding-left: 60px;
+	}
+	.button-title a , .button-title1 a , .button-title2 a{
+		width: 200px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.input{
+		display: block;
+	}
+	.input-text1{
+		padding-left: 0;
+		padding-top: 45px;
+	}
+	.subscraid{
+		text-align: center;
+	}
+	.pay-button{
+		padding-left: 65px;
+	}
+	.text1{
+		display: block;
+		text-align: center;
+		padding-left: 0;
+		padding-bottom: 20px;
+	}
+	.text1 p{
+		font-size: 14px;
+	}
+	.batton-table{
+		margin-left: 20px;
+	}
+	.fon{
+		width: 100%;
+	}
+	.chart {
+		margin-left: 5px;
+	}
+}
+@media screen and (max-width:430px){
+	.card{
+		margin-left: 10px;
+		width: 90%;
+	}
+	.logo1{
+		padding-top: 40px;
+	}
+	.cl-btn-7{
+		left: 280px;
+	}
+	.logo-text h1{
+		font-size: 32px;
+	}
+	.logo-text h2{
+		font-weight: 400;
+		font-size: 13px;
+	}
+	.info{
+		display: block;
+	}
+	.info-logo img{
+		width: 250px;
+	}
+	.ham-menu-1{
+		padding: 10px;
+		width: 90%;
+		height: 80%;
+	}
+	.button-2 button{
+		width: 300px;
+	}
+	.hamburger{
+		padding: 10px;
+		width: 99%;
+	}
+	.worning{
+		width: 40%;
+		padding-left: 90px;
+	}
+	.text-inp {
+		font-size: 28px;
+	}
+	.inp input {
+		width: 300px;
+	}
+	.batton-hamb button{
+
+		padding-left: 20px;
+	}
+	.batton-hamb{
+		padding-left: 20px;
+		width: 200px;
+		margin-left: 80px;
+	}
+	.info-text{
+		padding-left: 10px;
+	}
+	.text-battun{
+		margin-left: 60px;
+	}
+	.citi{
+		width: 280px;
+	}
+	.Vector4{
+		top: 80px;
+		width: 200px;
+	}
+	.img-color{
+		display: block;
+		left: 20px;
+		height: 150px;
+		top: 600px;
+	}
+	.info-logo{
+		padding-left: 100px;
+		padding-top: 30px;
+	}
+	.info-text h1{
+		text-align: center;
+		font-size: 25px;
+	}
+	.info-text h2{
+		text-align: center;
+		line-height: 15px;
+		font-size: 20px;
+	}
+	.calculator{
+		width: 99%;
+	}
+	.container1{
+		display: block;
+	}
+	.button-title , .button-title1 , .button-title2{
+		display: grid;
+		padding-left: 60px;
+	}
+	.button-title a , .button-title1 a , .button-title2 a{
+		width: 200px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.input{
+		display: block;
+	}
+	.input-text1{
+		padding-left: 0;
+		padding-top: 45px;
+	}
+	.subscraid{
+		text-align: center;
+	}
+	.pay-button{
+		padding-left: 95px;
+	}
+	.text1{
+		display: block;
+		text-align: center;
+		padding-left: 0;
+		padding-bottom: 20px;
+	}
+	.text1 p{
+		font-size: 14px;
+	}
+	.batton-table{
+		margin-left: 20px;
+	}
+	.fon{
+		width: 100%;
+	}
+	.chart {
+		margin-left: 30px;
 	}
 }

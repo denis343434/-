@@ -23,3 +23,17 @@ $('#menu-1').click(function(){
 $('#menu').click(function(){
 	$('.hamburger').toggleClass('d-n');
 });
+$('.pay-button-1').click(function(){
+	$('.chart-container').toggleClass('d-n');
+});
+$('.close-chat-table').click(function(){
+	$('.chart-container').toggleClass('d-n');
+});
+function scrollToElement() {
+  var element = document.getElementById('scrollToMe');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToElement() {
+  var element = document.getElementById('scrollToMe1');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
