@@ -1108,6 +1108,7 @@ thead td{
 	}
 	.calculator{
 		padding-left: 10px;
+		width: 95%;
 	}
 	.fon{
 		display: block;
@@ -1297,6 +1298,12 @@ thead td{
 		margin-left: 10px;
 		width: 90%;
 	}
+	.table{
+		width: 99%;	
+	}
+	.programs{
+		margin-left: 5px;
+	}
 	.logo1{
 		padding-top: 40px;
 	}
@@ -1417,12 +1424,28 @@ thead td{
 		font-size: 14px;
 	}
 	.batton-table{
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.fon{
 		width: 100%;
+		padding-left: 2px;
 	}
 	.chart {
 		margin-left: 30px;
+	}
+	.calculator{
+		width: 95%;
+	}
+	.programs-title{
+		margin-left: 20px;
+	}
+	.container{
+		padding-left: 0;
+	}
+	.hamburger{
+		padding: 3px;	
+	}
+	.pay-button{
+		padding-left: 80px;		
 	}
 }
